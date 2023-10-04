@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.bg {
+    background: radial-gradient(circle closest-side, rgba(191, 219, 254, 0.3), transparent);
+}
+@media (min-height: 700px) {
+    .text-change {
+      font-size: 20px;  /* Estilos que deseas aplicar cuando la altura de la pantalla sea mayor o igual a 600px */
+    }
+        .tittle-change {
+            font-size: 40px;
+            /* Estilos que deseas aplicar cuando la altura de la pantalla sea mayor o igual a 600px */
+        }
+}
