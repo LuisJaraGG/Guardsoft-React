@@ -2,21 +2,25 @@ export const proposito:{
     lottie:string,
     tittle:string,
     content:string,
+    animation:string
 }[] = [
     {
         lottie:"1",
         tittle:"Apostamos por las personas",
-        content:"Apostamos por el talento y brindamos oportunidades laborales a las personas en la búsqueda de su primer trabajo en tecnología."
-    },
+        content:"Apostamos por el talento y brindamos oportunidades laborales a las personas en la búsqueda de su primer trabajo en tecnología.",
+        animation:"fade-right"
+      },
         {
         lottie:"2",
         tittle:"Impacto en la sociedad",
-        content:"A través de las soluciones queremos enseñar a más personas los beneficios que brinda la tecnología."
+        content:"A través de las soluciones queremos enseñar a más personas los beneficios que brinda la tecnología.",
+        animation:"fade-left"
     },
         {
         lottie:"3",
         tittle:"Inclusión y diversidad",
-        content:"Nuestro equipo es multidisciplinario y diverso, buscamos la inclusión de más personas en este sector."
+        content:"Nuestro equipo es multidisciplinario y diverso, buscamos la inclusión de más personas en este sector.",
+        animation:"fade-right"
     },
 ]
 
@@ -24,21 +28,25 @@ export const servicios:{
     lottie:string,
     tittle:string,
     content:string,
+    animation:string
 }[] = [
     {
         lottie:"servicio1",
         tittle:"Consultoría DIgital",
-        content:"Realizamos una evaluación y replanteamos los procesos actuales, para crear nuevas oportunidades de crecimiento enfocados en transformación digital."
+        content:"Realizamos una evaluación y replanteamos los procesos actuales, para crear nuevas oportunidades de crecimiento enfocados en transformación digital.",
+        animation:"fade-right"
     },
         {
         lottie:"servicio2",
         tittle:"UX/UI",
-        content:"Identificamos las necesidades y desarrollamos productos digitales centrados en brindar una experiencia de calidad a los usuarios."
+        content:"Identificamos las necesidades y desarrollamos productos digitales centrados en brindar una experiencia de calidad a los usuarios.",
+        animation:"fade-left"
     },
         {
         lottie:"servicio3",
         tittle:"Desarrollo de Software",
-        content:"Desarrollo de aplicaciones móviles y web sobre servicios basado en cloudcomputing, brindamos soluciones de infraestructura en la nube."
+        content:"Desarrollo de aplicaciones móviles y web sobre servicios basado en cloudcomputing, brindamos soluciones de infraestructura en la nube.",
+        animation:"fade-right"
     },
 ]
 
@@ -75,12 +83,14 @@ export const locacion:{
     icono:string,
     tittle:string,
     content:string,
+    animation:string
 }[] = [
   {
     icono: "FaMap",
     tittle: "Ubicanos",
     content:
       "Los Olivos",
+        animation:"fade-right"
   },
     
   {
@@ -88,12 +98,14 @@ export const locacion:{
     tittle: "Correo",
     content:
       "hola@guardsoft.pe",
+        animation:"fade-left"
   },
   {
     icono: "FaPhone",
     tittle: "Telefono",
     content:
       "+51 957798775",
+    animation:"fade-right"
  
   },
 ]

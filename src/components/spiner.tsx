@@ -14,11 +14,11 @@ const Spiner = () => {
       };
     }, []);
   return (
-    <div className=" fixed inset-0  flex flex-col justify-center items-center  bg-white bg-opacity-90 z-40">
+    <div className=" fixed w-full h-full flex flex-col justify-center items-center  bg-white z-50">
       <div role="status">
         <svg
           aria-hidden="true"
-          className="inline w-8 h-8 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-[#B5853E]"
+          className="inline w-8 h-8 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
           viewBox="0 0 100 101"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"

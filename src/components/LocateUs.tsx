@@ -1,6 +1,5 @@
 import { FaMap, FaAddressCard, FaPhone } from "react-icons/fa";
 import { locacion } from "../data/DataCards";
-import LottieW from "./LottiePlay";
 const LocateUs = () => {
 
       
@@ -9,7 +8,11 @@ const LocateUs = () => {
         id="locate"
         className="overflow-hidden min-h-[653px] flex flex-col relative py-20 gap-y-10 justify-center"
       >
-        <div className="text-center px-5">
+        <div
+          className="text-center px-5"
+          data-aos="fade-up"
+          data-aos-once="true"
+        >
           <p className="text-white font-bold text-2xl md:text-4xl">
             ¿Preparado para un nuevo Proyecto?
           </p>
@@ -36,6 +39,8 @@ const LocateUs = () => {
               <div
                 key={index}
                 className=" bg-white rounded-lg p-8 shadow-lg  w-64  flex flex-col justify-center items-center hover:shadow-blue-400 hover:shadow-2xl transition-all duration-300"
+                data-aos={locate.animation}
+                data-aos-once="true"
               >
                 {getIconComponent(locate.icono)}
                 <h1 className="text-blue-600 font-black text-xl">
@@ -48,8 +53,18 @@ const LocateUs = () => {
         </div>
 
         {/* Fondo */}
-        <div className=" absolute top-0 left-0 right-0 -z-20">
-          <LottieW path="espacio" styles="w-[125%] md:w-[100%]  md:w-[150%]" />
+        <div className="absolute top-0 left-0 right-0 -z-20 w-full h-full">
+          <div
+            className="relative w-[100%] h-full"
+            style={{
+              backgroundImage: `url('/images/bg-2.webp')`,
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+            }}
+          >
+            <div className="w-full h-full bg-black absolute opacity-50"></div>
+          </div>
         </div>
       </section>
     );

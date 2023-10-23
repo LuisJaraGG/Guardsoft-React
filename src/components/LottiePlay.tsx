@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Player } from "@lottiefiles/react-lottie-player";
-
-
+import Spiner from "./spiner";
 interface Props {
   path: string;
   styles?: string;
@@ -21,6 +20,8 @@ const LottieW = ({
     setAnimationReady(true);
   };
   return (
+    <>
+    {!animationReady&& <Spiner/>}
       <Player
         autoplay={true}
         loop={true}
@@ -30,6 +31,7 @@ const LottieW = ({
           if (event === "load") charge(); // check event type and do something
         }}
       ></Player>
+    </>
 
   );
 };
