@@ -1,5 +1,4 @@
 import { FaMap, FaAddressCard, FaPhone } from "react-icons/fa";
-
 import { locacion } from "../data/DataCards";
 import LottieW from "./LottiePlay";
 const LocateUs = () => {
@@ -11,7 +10,7 @@ const LocateUs = () => {
         className="overflow-hidden min-h-[653px] flex flex-col relative py-20 gap-y-10 justify-center"
       >
         <div className="text-center px-5">
-          <p className="text-white font-bold text-3xl md:text-4xl">
+          <p className="text-white font-bold text-2xl md:text-4xl">
             ¿Preparado para un nuevo Proyecto?
           </p>
           <p className="text-white font-light md:text-xl">

@@ -1,5 +1,7 @@
 
 import { proposito } from "../data/DataCards";
+import { UserCheck, Building2, Speech } from "lucide-react";
+
 import LottieW from "./LottiePlay";
 const Purpose = () => {
   return (
@@ -16,12 +18,26 @@ const Purpose = () => {
 
       <div className="flex flex-wrap justify-center gap-y-10 gap-5 px-1 ">
         {proposito.map((p, index) => {
+
+          const getIcon = (icon:string)=>{
+            const style = "w-[150px] h-[60px] mb-2 text-blue-600";
+                       switch (icon) {
+                          case "1":
+                            return  <UserCheck className={style}/>
+                          case "2":
+                            return <Building2 className={style} />;
+                          case "3":
+                            return <Speech className={style} />;
+                          default:
+                             return null;
+                        };
+          }
           return (
             <div
               key={index}
-              className=" bg-white rounded-lg p-8 shadow-lg  w-64 hover:shadow-violet-400 hover:shadow-2xl transition-all duration-300 "
+              className="flex flex-col items-center bg-white rounded-lg p-8 shadow-lg  w-64 hover:shadow-violet-400 hover:shadow-2xl transition-all duration-300 "
             >
-              <LottieW path={p.lottie} styles=" w-[150px]" />
+              {getIcon(p.lottie)}
               <h1 className="text-center text-blue-600 font-black leading-tight text-xl">
                 {p.tittle}
               </h1>

@@ -3,16 +3,14 @@ import {
   NavbarBrand,
   NavbarContent,
   NavbarItem,
-  Link,
 } from "@nextui-org/react";
+import { Link } from "react-router-dom";
 const NavDesktop = () => {
 
     return (
-      <Navbar
-        className="fixed hidden md:flex"
-      >
+      <Navbar className="fixed hidden md:flex">
         <NavbarBrand>
-          <Link color="foreground" href="#hero">
+          <Link to={"/#hero"}>
             <img
               src="/images/logo.webp"
               alt="ECAR logo ecar"
@@ -25,7 +23,7 @@ const NavDesktop = () => {
           <NavbarItem>
             <Link
               color="foreground"
-              href="#hero"
+              to={"/#hero"}
               className="hover:text-blue-600 transition-all duration-200"
             >
               Inicio
@@ -34,7 +32,7 @@ const NavDesktop = () => {
           <NavbarItem>
             <Link
               color="foreground"
-              href="#about"
+              to={"/#about"}
               className="hover:text-blue-600 transition-all duration-200"
             >
               Nosotros
@@ -43,7 +41,7 @@ const NavDesktop = () => {
           <NavbarItem>
             <Link
               color="foreground"
-              href="#proposito"
+              to={"/#proposito"}
               className="hover:text-blue-600 transition-all duration-200"
             >
               Propósito
@@ -52,7 +50,7 @@ const NavDesktop = () => {
           <NavbarItem>
             <Link
               color="foreground"
-              href="#service"
+              to={"/#service"}
               className="hover:text-blue-600 transition-all duration-200"
             >
               Servicios
@@ -61,7 +59,7 @@ const NavDesktop = () => {
           <NavbarItem>
             <Link
               color="foreground"
-              href="#proyect"
+              to={"/#proyect"}
               className="hover:text-blue-600 transition-all duration-200"
             >
               Proyectos
@@ -70,7 +68,7 @@ const NavDesktop = () => {
           <NavbarItem>
             <Link
               color="foreground"
-              href="#locate"
+              to={"/#locate"}
               className="hover:text-blue-600 transition-all duration-200"
             >
               Ubicanos
@@ -79,7 +77,7 @@ const NavDesktop = () => {
           <NavbarItem>
             <Link
               color="foreground"
-              href="#contact"
+              to={"/#contact"}
               className="hover:text-blue-600 transition-all duration-200"
             >
               Contactanos

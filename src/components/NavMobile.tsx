@@ -4,24 +4,23 @@ import {
   Navbar,
   NavbarBrand,
   NavbarContent,
-  Link,
   NavbarMenuToggle,
   NavbarMenuItem,
   NavbarMenu,
 } from "@nextui-org/react";
+import { Link } from "react-router-dom";
 const NavMobile = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
       <Navbar
-      
         isMenuOpen={isMenuOpen}
         onMenuOpenChange={setIsMenuOpen}
-        className="fixed md:hidden shadow-sm"
+        className="fixed md:hidden shadow-md"
         isBlurred
       >
         <NavbarBrand>
-          <Link color="foreground" href="#hero">
+          <Link color="foreground" to={"/#hero"}>
             <img
               src="/images/logo.webp"
               alt="ECAR logo ecar"
@@ -40,7 +39,7 @@ const NavMobile = () => {
           <NavbarMenuItem>
             <Link
               color="foreground"
-              href="#hero"
+              to={"/#hero"}
               onClick={() => {
                 setIsMenuOpen(false);
               }}
@@ -51,7 +50,7 @@ const NavMobile = () => {
           <NavbarMenuItem>
             <Link
               color="foreground"
-              href="#about"
+              to={"/#about"}
               onClick={() => {
                 setIsMenuOpen(false);
               }}
@@ -62,7 +61,7 @@ const NavMobile = () => {
           <NavbarMenuItem>
             <Link
               color="foreground"
-              href="#proposito"
+              to={"/#proposito"}
               onClick={() => {
                 setIsMenuOpen(false);
               }}
@@ -73,7 +72,7 @@ const NavMobile = () => {
           <NavbarMenuItem>
             <Link
               color="foreground"
-              href="#service"
+              to={"/#service"}
               onClick={() => {
                 setIsMenuOpen(false);
               }}
@@ -84,7 +83,7 @@ const NavMobile = () => {
           <NavbarMenuItem>
             <Link
               color="foreground"
-              href="#proyect"
+              to={"/#proyect"}
               onClick={() => {
                 setIsMenuOpen(false);
               }}
@@ -95,7 +94,7 @@ const NavMobile = () => {
           <NavbarMenuItem>
             <Link
               color="foreground"
-              href="#locate"
+              to={"/#locate"}
               onClick={() => {
                 setIsMenuOpen(false);
               }}
@@ -106,7 +105,7 @@ const NavMobile = () => {
           <NavbarMenuItem>
             <Link
               color="foreground"
-              href="#contact"
+              to={"/#contact"}
               onClick={() => {
                 setIsMenuOpen(false);
               }}

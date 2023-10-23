@@ -1,13 +1,18 @@
 import NavDesktop from "../components/NavDesktop";
 import NavMobile from "../components/NavMobile";
+import { Outlet,ScrollRestoration } from "react-router-dom";
 
 
 const RootLayout = () => {
   return (
-    <main>
+    <>
       <NavDesktop />
       <NavMobile />
-    </main>
+      <main className="mt-20">
+        <ScrollRestoration />
+        <Outlet></Outlet>
+      </main>
+    </>
   );
 }
 

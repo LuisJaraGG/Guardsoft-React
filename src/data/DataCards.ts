@@ -4,17 +4,17 @@ export const proposito:{
     content:string,
 }[] = [
     {
-        lottie:"p-1",
+        lottie:"1",
         tittle:"Apostamos por las personas",
         content:"Apostamos por el talento y brindamos oportunidades laborales a las personas en la búsqueda de su primer trabajo en tecnología."
     },
         {
-        lottie:"p-2",
+        lottie:"2",
         tittle:"Impacto en la sociedad",
         content:"A través de las soluciones queremos enseñar a más personas los beneficios que brinda la tecnología."
     },
         {
-        lottie:"p-3",
+        lottie:"3",
         tittle:"Inclusión y diversidad",
         content:"Nuestro equipo es multidisciplinario y diverso, buscamos la inclusión de más personas en este sector."
     },
