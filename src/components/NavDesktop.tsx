@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const NavDesktop = () => {
 
     return (
-      <Navbar className="fixed hidden md:flex">
+      <Navbar className="fixed hidden md:flex shadow-sm">
         <NavbarBrand>
           <Link to={"/#hero"}>
             <img
@@ -19,7 +19,10 @@ const NavDesktop = () => {
           </Link>
         </NavbarBrand>
 
-        <NavbarContent className="hidden sm:flex gap-4" justify="end">
+        <NavbarContent
+          className="hidden sm:flex gap-4 font-semibold "
+          justify="end"
+        >
           <NavbarItem>
             <Link
               color="foreground"
@@ -71,7 +74,7 @@ const NavDesktop = () => {
               to={"/#locate"}
               className="hover:text-blue-600 transition-all duration-200"
             >
-              Ubicanos
+              Ubícanos
             </Link>
           </NavbarItem>
           <NavbarItem>
@@ -80,7 +83,7 @@ const NavDesktop = () => {
               to={"/#contact"}
               className="hover:text-blue-600 transition-all duration-200"
             >
-              Contactanos
+              Contáctanos
             </Link>
           </NavbarItem>
         </NavbarContent>

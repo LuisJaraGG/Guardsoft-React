@@ -16,7 +16,7 @@ const About = () => {
           Sobre nosotros
         </p>
         <p className=" text-[32px] tittle-change md:text-[45px]  lg:text-[50px]  font-black text-blue-600  leading-tight ">
-          ¿Quienes Somos?
+          ¿Quiénes Somos?
         </p>
         <p className=" text-[16px] text-change  md:text-[24px]  font-normal text-slate-500 leading-relaxed">
           Guardsoft es una empresa peruana dedica a proveer soluciones del tipo

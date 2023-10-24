@@ -67,7 +67,7 @@ export const proyectos:{
     url: "/images/cloudhotel.webp",
     tittle: "CloudHotel",
     content:
-      "Nuestra aplicacion permite gestionar hoteles de manera facil y sencilla en cualquier momento con un solo.",
+      "Nuestra aplicación permite gestionar hoteles de manera fácil y sencilla en cualquier momento con un solo.",
     link: "https://play.google.com/store/apps/details?id=com.guardsoft.cloudhotel&hl=es_CL&gl=US",
   },
   {
@@ -87,7 +87,7 @@ export const locacion:{
 }[] = [
   {
     icono: "FaMap",
-    tittle: "Ubicanos",
+    tittle: "Ubícanos",
     content:
       "Los Olivos",
         animation:"fade-right"

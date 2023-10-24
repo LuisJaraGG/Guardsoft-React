@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import LottieW from "./LottiePlay";
 import { FaAngleDown } from "react-icons/fa";
 
@@ -32,7 +33,9 @@ const Hero = () => {
       </div>
 
       <div className="absolute bottom-4 left-0 right-0 animate-bounce duration-400 flex justify-center">
-        <FaAngleDown className="text-blue-600 h-6" />
+        <Link to={"/#about"}>
+          <FaAngleDown className="text-blue-600 h-6" />
+        </Link>
       </div>
     </section>
   );
