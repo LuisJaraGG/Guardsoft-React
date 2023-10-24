@@ -216,7 +216,10 @@ const Contact = () => {
             </div>
 
             <div className="flex flex-row gap-x-10 justify-center">
-              <a target="_blank" href="https://google.com">
+              <a
+                target="_blank"
+                href="https://www.facebook.com/profile.php?id=61552611185544"
+              >
                 <FaFacebook
                   size={30}
                   className="text-blue-700 hover:text-blue-500 transition-all duration-300 "
@@ -234,7 +237,7 @@ const Contact = () => {
                   className="text-blue-700 hover:text-blue-500 transition-all duration-300 "
                 ></FaTwitter>
               </a>
-              <a target="_blank" href="https://google.com">
+              <a target="_blank" href="https://www.instagram.com/guardsoft.pe/">
                 <FaInstagram
                   size={30}
                   className="text-blue-700 hover:text-blue-500 transition-all duration-300 "
