@@ -1,4 +1,4 @@
-import { Toaster } from "@/components/ui/toaster";
+import { Toaster } from "react-hot-toast";
 import NavDesktop from "../components/NavDesktop";
 import NavMobile from "../components/NavMobile";
 import { Outlet, ScrollRestoration } from "react-router-dom";

@@ -1,20 +1,18 @@
 import { zodResolver } from "@hookform/resolvers/zod";
-
+import { Loader2 } from "lucide-react";
 import * as z from "zod";
+import toast from "react-hot-toast";
 import { useForm } from "react-hook-form";
-import { useToast } from "./ui/use-toast";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import LottieW from "./LottiePlay";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
-import { useState } from "react";
 import { Form, FormControl, FormField, FormItem, FormMessage } from "./ui/form";
-import Spiner from "./spiner";
+import { useState } from "react";
 
 const Contact = () => {
   const [Loading, setLoading] = useState(false);
-
   const formSchema = z.object({
     name: z
       .string()
@@ -39,58 +37,38 @@ const Contact = () => {
     },
   });
 
-  const { toast } = useToast();
   function onSubmit(values: z.infer<typeof formSchema>) {
-    if (
-      values.name.trim() === "" ||
-      values.phone.trim() === "" ||
-      values.email.trim() === "" ||
-      values.message.trim() === ""
-    ) {
-      return toast({
-        variant: "destructive",
-        description: `Debe de llenar todos los campos`,
-      });
-    }
     setLoading(true);
 
-    // fetch("https://node-nodemailer-provider.vercel.app/api/mail", {
-    //   method: "POST",
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    //   body: JSON.stringify(values),
-    // })
-    //   .then((res) => {
-    //     if (res.ok) {
-    //       toast({
-    //         description: "Mensaje enviado",
-    //         duration: 2000,
-    //       });
-    //       form.reset();
-    //     } else {
-    //       toast({
-    //         variant: "destructive",
-    //         description: `Ocurrió un error al enviar el mensaje!`,
-    //       });
-    //     }
-    //   })
-    //   .catch((error) => {
-    //     toast({
-    //       variant: "destructive",
-    //       description: `Ocurrió un error en: ${error}`,
-    //     });
-    //   })
-    //   .finally(() => {
-    //     setLoading(false);
-    //   });
+    fetch("https://nodemailer-guardsoft.vercel.app/api/mail", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(values),
+    })
+      .then((res) => {
+        if (res.ok) {
+          toast.success("Mensaje enviado");
+          form.reset();
+        } else {
+          toast.error("Ocurrió un error al enviar el mensaje");
+        }
+      })
+      .catch((error) => {
+        toast.error(`Ocurrió un error en: ${error}`);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+
+    return;
   }
 
-  const isLoading = form.formState.isSubmitting;
+  const { isSubmitting } = form.formState;
 
   return (
     <>
-      {Loading && <Spiner />}
       <div
         id="contact"
         className=" flex  items-center  relative min-h-[805px]  overflow-hidden h-screen"
@@ -143,7 +121,7 @@ const Contact = () => {
                         <FormControl>
                           <Input
                             className="w/full"
-                            disabled={isLoading}
+                            disabled={isSubmitting}
                             placeholder="Ingrese nombre"
                             {...field}
                           />
@@ -160,7 +138,7 @@ const Contact = () => {
                         <FormControl>
                           <Input
                             className="w/full"
-                            disabled={isLoading}
+                            disabled={isSubmitting}
                             placeholder="Ingrese número de celular"
                             {...field}
                           />
@@ -177,7 +155,7 @@ const Contact = () => {
                         <FormControl>
                           <Input
                             className="w/full"
-                            disabled={isLoading}
+                            disabled={isSubmitting}
                             placeholder="Ingrese email"
                             {...field}
                           />
@@ -194,7 +172,7 @@ const Contact = () => {
                         <FormControl>
                           <Textarea
                             className="w/full mb-5"
-                            disabled={isLoading}
+                            disabled={isSubmitting}
                             rows={5}
                             placeholder="Descripción de su consulta"
                             {...field}
@@ -204,11 +182,13 @@ const Contact = () => {
                       </FormItem>
                     )}
                   />
+
                   <Button
-                    disabled={isLoading}
+                    disabled={Loading}
                     type="submit"
-                    className=" bg-blue-700 hover:bg-blue-500 w-full rounded-none titulo"
+                    className=" bg-blue-700 hover:bg-blue-500 w-full rounded-none titulo flex gap-x-2"
                   >
+                    {Loading && <Loader2 className="animate-spin" />}
                     Enviar
                   </Button>
                 </form>
