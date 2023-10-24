@@ -7,7 +7,7 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import LottieW from "./LottiePlay";
-import { FaFacebook, FaInstagram} from "react-icons/fa";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { useState } from "react";
 import { Form, FormControl, FormField, FormItem, FormMessage } from "./ui/form";
 import Spiner from "./spiner";
@@ -53,7 +53,7 @@ const Contact = () => {
       });
     }
     setLoading(true);
-    
+
     // fetch("https://node-nodemailer-provider.vercel.app/api/mail", {
     //   method: "POST",
     //   headers: {
@@ -215,7 +215,13 @@ const Contact = () => {
               </Form>
             </div>
 
-            <div className="flex flex-row gap-x-10 justify-center">
+            <div
+              className="flex flex-row gap-x-10 justify-center"
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-duration="1000"
+              data-aos-offset="0"
+            >
               <a
                 target="_blank"
                 href="https://www.facebook.com/profile.php?id=61552611185544"
