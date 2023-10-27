@@ -1,5 +1,12 @@
+import Spiner from "./spiner";
+import { useState } from "react";
+
 const Developing = () => {
+  const [Loading, setLoading] = useState(true)
+
   return (
+    <>
+    {Loading&& <Spiner inset="inset-0"/>}
     <section className=" overflow-hidden mt-20 max-w-[980px] mx-auto py-10 flex flex-col gap-y-24 px-5">
       <div>
         <h1
@@ -29,6 +36,7 @@ const Developing = () => {
             className="md:max-w-[500px] mx-auto rounded-3xl"
             data-aos="fade-left"
             data-aos-once="true"
+            onLoad={()=>setLoading(false)}
           />
         </div>
       </div>
@@ -128,6 +136,7 @@ const Developing = () => {
         </div>
       </div>
     </section>
+    </>
   );
 }
 export default Developing

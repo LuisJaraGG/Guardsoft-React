@@ -1,20 +1,24 @@
+import { useEffect } from "react";
 
+interface InsetProps {
+  inset?: string;
+}
 
-import  { useEffect } from "react";
+const Spiner = ({ inset="" }: InsetProps) => {
+  useEffect(() => {
+    // Bloquear el scroll al mostrar el spinner
+    document.body.style.overflow = "hidden";
 
+    // Habilitar el scroll al ocultar el spinner
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, []);
 
-const Spiner = () => {
-    useEffect(() => {
-      // Bloquear el scroll al mostrar el spinner
-      document.body.style.overflow = "hidden";
-
-      // Habilitar el scroll al ocultar el spinner
-      return () => {
-        document.body.style.overflow = "auto";
-      };
-    }, []);
   return (
-    <div className=" fixed w-full h-full flex flex-col justify-center items-center  bg-white z-50">
+    <div
+      className={`fixed ${inset} w-full h-full flex flex-col justify-center items-center  bg-white z-50`}
+    >
       <div role="status">
         <svg
           aria-hidden="true"
@@ -36,6 +40,6 @@ const Spiner = () => {
       <span className=" txt-default font-bold mt-2">Loading...</span>
     </div>
   );
-}
+};
 
-export default Spiner
+export default Spiner;
