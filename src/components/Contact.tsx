@@ -7,7 +7,7 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import LottieW from "./LottiePlay";
-import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaInstagram,FaTwitter } from "react-icons/fa";
 import { Form, FormControl, FormField, FormItem, FormMessage } from "./ui/form";
 import { useState } from "react";
 
@@ -216,6 +216,12 @@ const Contact = () => {
                   size={30}
                   className="text-blue-700 hover:text-blue-500 transition-all duration-300 "
                 ></FaInstagram>
+              </a>
+              <a target="_blank" href="https://twitter.com/guardsoft_pe">
+                <FaTwitter
+                  size={30}
+                  className="text-blue-700 hover:text-blue-500 transition-all duration-300 "
+                ></FaTwitter>
               </a>
             </div>
           </div>
