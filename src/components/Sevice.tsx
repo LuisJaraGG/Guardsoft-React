@@ -23,7 +23,7 @@ const Sevice = () => {
           return (
             <div
               key={index}
-              className=" bg-white rounded-lg p-8 shadow-lg  w-64 hover:shadow-blue-400 hover:shadow-2xl transition-all duration-300 "
+              className=" bg-white rounded-lg p-8 shadow-lg  w-64 "
               data-aos={s.animation}
               data-aos-once="true"
             >

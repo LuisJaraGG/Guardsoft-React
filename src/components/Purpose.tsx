@@ -31,7 +31,7 @@ const Purpose = () => {
           return (
             <div
               key={index}
-              className="flex flex-col items-center bg-white rounded-lg p-8 shadow-lg  w-64 hover:shadow-violet-400 hover:shadow-2xl transition-opacity duration-300 "
+              className="flex flex-col items-center bg-white rounded-lg p-8 shadow-lg  w-64 "
               data-aos={p.animation}
               data-aos-once="true"
             >
