@@ -52,6 +52,8 @@ const Proyeccts = () => {
                       src={slide.url}
                       alt={`Guardsoft ${slide.tittle}`}
                       className="w-20 h-20"
+                      width={512}
+                      height={512}
                     />
                     <h1 className="text-blue-600 font-black">{slide.tittle}</h1>
                     <p className="">{slide.content}</p>

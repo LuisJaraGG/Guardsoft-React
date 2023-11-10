@@ -28,6 +28,8 @@ const About = () => {
         src="/images/about.webp"
         alt="Guardsoft Abut image"
         className="w-full object-cover min-h-[250px] pt-3 md:w-1/2"
+        width={1920}
+        height={1280}
       />
     </section>
   );

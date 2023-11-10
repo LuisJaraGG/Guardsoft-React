@@ -13,8 +13,8 @@ const LottieW = ({
   const [animationReady, setAnimationReady] = useState(false);
 
   const playerClassName = animationReady
-    ? ` fadeInPlayer active ${styles}`
-    : "fadeInPlayer ";
+    ? ` ${styles}`
+    : "";
 
   const charge = () => {
     setAnimationReady(true);
