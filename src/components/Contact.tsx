@@ -204,7 +204,7 @@ const Contact = () => {
             >
               <a
                 target="_blank"
-                href="https://www.facebook.com/profile.php?id=61552611185544"
+                href="https://www.facebook.com/profile.php?id=61554667806183"
               >
                 <FaFacebook
                   size={30}
