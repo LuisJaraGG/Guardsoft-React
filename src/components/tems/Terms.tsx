@@ -1,8 +1,9 @@
-
+import Footer from '../Footer'
 import { Image } from '@nextui-org/react'
 import {PaperclipIcon} from 'lucide-react'
 const Terms = () => {
   return (
+    <>
     <section className=" mx-auto  px-8 md:px-20  mb-16 max-w-5xl bg">
 
     <div id="header"></div>
@@ -33,6 +34,8 @@ const Terms = () => {
       Esta app garantiza que la informacion personal que usted envia cuenta con la seguridad necesaria. Los datos ingresados por usuario o en el caso de requerir una validacion de los pedidos no seran entregados a terceros, salvo que deba ser revelada en cumplimiento a una orden juducial o requeriminetos legales.
       GUARDSOFT EIRL se reserva los derechos de cambiar o de modificar estos terminos sin previo aviso. </p>
     </section>
+    <Footer></Footer>
+    </>
   )
 }
 
