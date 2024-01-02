@@ -26,7 +26,6 @@ function App() {
       path:"/ecar/terms/terminos-condiciones.html",
       element: <Terms/>
     }
-    
   ]);
   return (
     <>
