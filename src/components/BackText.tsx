@@ -11,6 +11,7 @@ const BackText = () => {
       data-aos="fade-up"
       data-aos-once="true"
     >
+      
       <div className="w-full h-full flex justify-center items-center bg-black absolute opacity-75 ">
         <p className="text-white font-bold text-2xl text-center px-10 md:text-4xl">
           Alta calidad en cada producto
