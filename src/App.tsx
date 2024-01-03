@@ -23,7 +23,7 @@ function App() {
       ],
     },
     {
-      path:"/ecar/terms/terminos-condiciones.html",
+      path:"/ecar/terms",
       element: <Terms/>
     }
   ]);
