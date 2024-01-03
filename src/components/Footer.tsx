@@ -2,7 +2,7 @@
 const Footer = () => {
   return (
     <section className=" border-t-2 py-2 gap-x-2 items-center text-center">
-        ©2024 GUARSOFT ALL RIGHTS RESERVED <span className="text-xs text-blue-600">1.0.2</span> 
+        ©2024 GUARSOFT ALL RIGHTS RESERVED <span className="text-xs text-blue-600">1.0.1</span> 
     </section>
   )
 }
