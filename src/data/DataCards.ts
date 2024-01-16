@@ -89,7 +89,7 @@ export const locacion:{
     icono: "FaMap",
     tittle: "Ubícanos",
     content:
-      "Los Olivos",
+      "Trujillo",
         animation:"fade-right"
   },
     
