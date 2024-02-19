@@ -16,7 +16,7 @@ const NavMobile = () => {
       <Navbar
         isMenuOpen={isMenuOpen}
         onMenuOpenChange={setIsMenuOpen}
-        className="fixed md:hidden shadow-sm h-12"
+        className="fixed md:hidden shadow-sm"
         isBlurred
       >
         <NavbarBrand>
@@ -35,7 +35,7 @@ const NavMobile = () => {
           />
         </NavbarContent>
 
-        <NavbarMenu className="w-full h-full text-center font-normal gap-y-4 -mt-5">
+        <NavbarMenu className="w-full h-full text-center font-normal gap-y-4 ">
           <NavbarMenuItem>
             <Link
               color="foreground"

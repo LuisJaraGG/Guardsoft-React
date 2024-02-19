@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const NavDesktop = () => {
 
     return (
-      <Navbar className="fixed hidden md:flex shadow-sm">
+      <Navbar className="fixed hidden md:flex shadow-sm smooth">
         <NavbarBrand>
           <Link to={"/#hero"}>
             <img

@@ -13,7 +13,7 @@ const BackText = lazy(() => import("../components/BackText"));
 
 const Dashboard = () => {
   return (
-    <main>
+    <main >
       <Suspense fallback={<Spinner />}>
         <NavDesktop />
         <NavMobile />

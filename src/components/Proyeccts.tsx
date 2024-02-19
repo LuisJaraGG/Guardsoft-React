@@ -9,7 +9,6 @@ const Proyeccts = () => {
         infinite: true,
         speed: 500,
         arrows: true,
-        fade: true,
         autoplay: true,
         autoplaySpeed: 3000,
         centerPadding: "50",
@@ -38,7 +37,7 @@ const Proyeccts = () => {
         >
           <Slider
             {...settings}
-            className="w-[210px] md:w-[300px] mx-auto text-center  md:h-80 bg-white  shadow-2xl  rounded-xl hover:shadow-violet-400 hover:shadow-2xl transition-all duration-300"
+            className="w-[210px] md:w-[300px] mx-auto text-center  md:h-80 bg-white rounded-3xl shadow-blue-300 shadow-2xl transition-all duration-300"
           >
             {proyectos.map((slide, index) => {
               return (

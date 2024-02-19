@@ -86,3 +86,9 @@
             /* Estilos que deseas aplicar cuando la altura de la pantalla sea mayor o igual a 600px */
         }
 }
+
+@media screen and (min-width: 768px) {
+    html{
+        scroll-behavior: smooth;
+    }
+  }
