@@ -3,14 +3,16 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { proyectos } from "../data/DataCards";
 const Proyeccts = () => {
+
       const settings = {
         dots: true,
         infinite: true,
-        speed: 300,
-        slidesToShow: 1,
-        slidesToScroll: 1,
+        speed: 500,
+        arrows: true,
+        fade: true,
         autoplay: true,
-        autoplaySpeed: 6000,
+        autoplaySpeed: 3000,
+        centerPadding: "50",
       };
   return (
     <section
@@ -18,7 +20,7 @@ const Proyeccts = () => {
       className="overflow-hidden min-h-[653px] flex flex-col justify-center items-center gap-y-10 bg py-20"
     >
       <div className="max-w-[900px] flex flex-col gap-y-10">
-        <div className="text-center px-10" data-aos="fade-up" data-aos-once="true">
+        <div className="text-center px-10" data-aos="fade-up">
           <p className="text-[32px] font-black text-blue-600">
             Nuestros Proyectos
           </p>
@@ -30,18 +32,17 @@ const Proyeccts = () => {
         </div>
 
         <div
-
-          className="w-full md:h-80"
+          className="w-full  md:h-80"
           data-aos="fade-up"
           data-aos-once="true"
         >
           <Slider
             {...settings}
-            className=" w-[230px] sm:w-[300px] mx-auto text-center  md:h-80 bg-white  shadow-2xl  rounded-xl hover:shadow-blue-400 hover:shadow-2xl transition-all duration-300"
+            className="w-[210px] md:w-[300px] mx-auto text-center  md:h-80 bg-white  shadow-2xl  rounded-xl hover:shadow-violet-400 hover:shadow-2xl transition-all duration-300"
           >
             {proyectos.map((slide, index) => {
               return (
-                <div key={index} className=" md:h-80 p-10 ">
+                <div key={index} className=" md:h-80    p-10 ">
                   <a
                     href={slide.link}
                     target="blank"
