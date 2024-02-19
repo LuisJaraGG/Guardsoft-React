@@ -187,7 +187,7 @@ const Contact = () => {
                   <Button
                     disabled={Loading}
                     type="submit"
-                    className=" bg-blue-700 hover:bg-blue-500 w-full rounded-none titulo flex gap-x-2"
+                    className=" bg-blue-600 hover:bg-blue-800 w-full rounded-none titulo flex gap-x-2 transition-all duration-300 "
                   >
                     {Loading && <Loader2 className="animate-spin" />}
                     Enviar

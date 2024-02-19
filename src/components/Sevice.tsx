@@ -38,7 +38,7 @@ const Sevice = () => {
       </div>
       <div className=" w-full h-[40px] flex justify-center   ">
         <Link to={'/dev'}>
-        <div className="hover:shadow-md hover:text-blue-600 flex items-end gap-x-3 px-5 pb-2 rounded-3xl transition-all duration-300">
+        <div className="hover:text-blue-600 flex items-end gap-x-3 px-5 pb-2  transition-all duration-300">
           <ArrowRightCircle />
           <p>Ver mas servicios</p>
         </div>

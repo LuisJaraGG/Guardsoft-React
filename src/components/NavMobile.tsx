@@ -14,9 +14,10 @@ const NavMobile = () => {
 
     return (
       <Navbar
+      
         isMenuOpen={isMenuOpen}
         onMenuOpenChange={setIsMenuOpen}
-        className="fixed md:hidden shadow-sm h-12"
+        className="fixed md:hidden shadow-sm "
         isBlurred
       >
         <NavbarBrand>
@@ -35,13 +36,15 @@ const NavMobile = () => {
           />
         </NavbarContent>
 
-        <NavbarMenu className="w-full h-full text-center font-normal gap-y-4 -mt-5">
+        <NavbarMenu  className=" text-center font-normal gap-y-4 ">
           <NavbarMenuItem>
             <Link
               color="foreground"
               to={"/#hero"}
               onClick={() => {
-                setIsMenuOpen(false);
+                setTimeout(() => {
+                  setIsMenuOpen(false);
+                }, 700);
               }}
             >
               Inicio
@@ -52,7 +55,9 @@ const NavMobile = () => {
               color="foreground"
               to={"/#about"}
               onClick={() => {
-                setIsMenuOpen(false);
+                setTimeout(() => {
+                  setIsMenuOpen(false);
+                }, 700);
               }}
             >
               Nosotros
@@ -63,7 +68,9 @@ const NavMobile = () => {
               color="foreground"
               to={"/#proposito"}
               onClick={() => {
-                setIsMenuOpen(false);
+                setTimeout(() => {
+                  setIsMenuOpen(false);
+                }, 700);
               }}
             >
               Propósito
@@ -74,7 +81,9 @@ const NavMobile = () => {
               color="foreground"
               to={"/#service"}
               onClick={() => {
-                setIsMenuOpen(false);
+                setTimeout(() => {
+                  setIsMenuOpen(false);
+                }, 700);
               }}
             >
               Servicios
@@ -85,7 +94,9 @@ const NavMobile = () => {
               color="foreground"
               to={"/#proyect"}
               onClick={() => {
-                setIsMenuOpen(false);
+                setTimeout(() => {
+                  setIsMenuOpen(false);
+                }, 700);
               }}
             >
               Proyects
@@ -96,7 +107,9 @@ const NavMobile = () => {
               color="foreground"
               to={"/#locate"}
               onClick={() => {
-                setIsMenuOpen(false);
+                setTimeout(() => {
+                  setIsMenuOpen(false);
+                }, 700);
               }}
             >
               Ubícanos
@@ -107,7 +120,9 @@ const NavMobile = () => {
               color="foreground"
               to={"/#contact"}
               onClick={() => {
-                setIsMenuOpen(false);
+                setTimeout(() => {
+                  setIsMenuOpen(false);
+                }, 700);
               }}
             >
               Contáctanos
