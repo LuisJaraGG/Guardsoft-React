@@ -1,5 +1,6 @@
 import Spiner from "./spiner";
 import { useState } from "react";
+import Footer from "./Footer";
 
 const Developing = () => {
   const [Loading, setLoading] = useState(true)
@@ -7,7 +8,7 @@ const Developing = () => {
   return (
     <>
     {Loading&& <Spiner inset="inset-0"/>}
-    <section className=" overflow-hidden mt-20 max-w-[980px] mx-auto py-10 flex flex-col gap-y-24 px-5">
+    <section className=" overflow-hidden mt-20 max-w-[980px] mx-auto py-16 flex flex-col gap-y-24 px-5">
       <div>
         <h1
           className="text-xl md:text-3xl text-blue-600 font-bold text-center md:text-left"
@@ -136,6 +137,8 @@ const Developing = () => {
         </div>
       </div>
     </section>
+    <Footer/>
+    
     </>
   );
 }

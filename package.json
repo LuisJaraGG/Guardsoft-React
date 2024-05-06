@@ -9,6 +9,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
+  "homepage": "https://guardsoft.pe/",
   "dependencies": {
     "@hookform/resolvers": "^3.3.2",
     "@lottiefiles/react-lottie-player": "^3.5.3",

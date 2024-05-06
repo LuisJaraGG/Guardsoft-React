@@ -54,7 +54,7 @@ const Proyeccts = () => {
                       width={512}
                       height={512}
                     />
-                    <h1 className="text-blue-600 font-black">{slide.tittle}</h1>
+                    <h1 className={`${slide.tittle === 'Ecar-Autosales' ? 'text-blue-500':'text-blue-600'} font-black`}>{slide.tittle}</h1>
                     <p className="">{slide.content}</p>
                   </a>
                 </div>

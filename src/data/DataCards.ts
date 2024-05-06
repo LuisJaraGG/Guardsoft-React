@@ -77,6 +77,13 @@ export const proyectos:{
       "Mi Bulla, una manera fácil de buscar y escuchar tus emisoras favoritas. Todas las emisoras del Perú.",
     link: "https://play.google.com/store/apps/details?id=pe.guardsoft.mibulla&hl=es_CL&gl=US",
   },
+  {
+    url: "/images/ecar-icon.png",
+    tittle: "Ecar-Autosales",
+    content:
+      "Ecar autosales, una aplicacion para comprar y vender autos de forma sencilla en cualquier momento.",
+    link: "https://autosales.ecar.pe",
+  },
 ]
 
 export const locacion:{
