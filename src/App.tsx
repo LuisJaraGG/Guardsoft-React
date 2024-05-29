@@ -8,6 +8,7 @@ import Dashboard from "./layout/Dashboard";
 import Error from "./components/Error";
 import Developing from "./components/Developing";
 import Terms from "./components/tems/Terms";
+import { AllProyects } from "./components/AllProyects";
 
 function App() {
     useEffect(() => {
@@ -19,7 +20,9 @@ function App() {
       errorElement: <Error></Error>,
       children: [
         { path: "/", element: <Dashboard /> },
-        { path: "/dev", element: <Developing></Developing> }
+        { path: "/todos-servicios", element: <Developing></Developing> },
+        { path: "/todos-proyectos", element: <AllProyects></AllProyects> },
+        { path: "*", element: <Error></Error> },
       ],
     },
     {

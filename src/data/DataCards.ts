@@ -55,34 +55,40 @@ export const proyectos:{
     tittle:string,
     content:string,
     link:string,
+    description?:string
 }[] = [
   {
     url: "/images/ecarlogo.webp",
     tittle: "Ecar",
     content:
-      "Sistema de consulta integrada para vehículos, SUNARP, Revisión Técnica, SOAT, Papeletas de Lima y Callao",
+      " SUNARP, Revisión Técnica, SOAT, Papeletas de Lima y Callao",
     link: "https://play.google.com/store/apps/details?id=com.centinel.ecar&hl=es&gl=US",
+    description: "Soluciones de revisión técnica, SOAT, Papeletas de Lima y Callao",
+
   },
   {
     url: "/images/cloudhotel.webp",
     tittle: "CloudHotel",
     content:
-      "Nuestra aplicación permite gestionar hoteles de manera fácil y sencilla en cualquier momento con un solo.",
+      "Gestión de hoteles de manera fácil y sencilla en cualquier momento con un solo.",
     link: "https://play.google.com/store/apps/details?id=com.guardsoft.cloudhotel&hl=es_CL&gl=US",
+    description: "Gestión de hoteles de manera fácil y sencilla en cualquier momento con un solo clic",
   },
   {
     url: "/images/mibulla.webp",
     tittle: "MiBulla",
     content:
-      "Mi Bulla, una manera fácil de buscar y escuchar tus emisoras favoritas. Todas las emisoras del Perú.",
+      "Busca y escucha tus emisoras favoritas. Todas las emisoras del Perú.",
     link: "https://play.google.com/store/apps/details?id=pe.guardsoft.mibulla&hl=es_CL&gl=US",
+    description: "Busca y escucha tus emisoras favoritas. Todas las emisoras del Perú.",
   },
   {
     url: "/images/ecar-icon.png",
     tittle: "Ecar-Autosales",
     content:
-      "Ecar autosales, una aplicacion para comprar y vender autos de forma sencilla en cualquier momento.",
+      "Compra y venta de automoviles de forma sencilla en cualquier momento.",
     link: "https://autosales.ecar.pe",
+    description: "Compra y venta de automoviles de forma sencilla en cualquier momento.",
   },
 ]
 

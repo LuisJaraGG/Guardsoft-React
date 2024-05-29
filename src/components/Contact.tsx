@@ -10,7 +10,6 @@ import LottieW from "./LottiePlay";
 import { FaFacebook, FaInstagram,FaTwitter } from "react-icons/fa";
 import { Form, FormControl, FormField, FormItem, FormMessage } from "./ui/form";
 import { useState } from "react";
-import Footer from "./Footer";
 
 const Contact = () => {
   const [Loading, setLoading] = useState(false);
@@ -228,7 +227,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <Footer></Footer>
     </>
   );
 };

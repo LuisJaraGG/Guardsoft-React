@@ -1,6 +1,5 @@
 import { servicios } from "../data/DataCards";
 import LottieW from "./LottiePlay";
-import { ArrowRightCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 
 
@@ -37,11 +36,9 @@ const Sevice = () => {
         })}
       </div>
       <div className=" w-full h-[40px] flex justify-center   ">
-        <Link to={'/dev'}>
-        <div className="hover:shadow-md hover:text-blue-600 flex items-end gap-x-3 px-5 pb-2 rounded-3xl transition-all duration-300">
-          <ArrowRightCircle />
-          <p>Ver mas servicios</p>
-        </div>
+        <Link to={'/todos-servicios'}>
+        <button className=" text-black hover:font-semibold py-2 px-4 rounded-3xl  border-2  transition-all duration-300 hover:bg-blue-600 hover:text-white hover:border-blue-600">
+          <p>Ver mas servicios</p></button>
         </Link>
       </div>
     </section>

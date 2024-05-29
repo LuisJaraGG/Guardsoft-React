@@ -1,24 +1,81 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 import { proyectos } from "../data/DataCards";
+import Slider from "react-slick";
+import { ArrowRight, ArrowLeft } from 'lucide-react';
+import { Link } from "react-router-dom";
+
+
 const Proyeccts = () => {
 
-      const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        arrows: true,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        centerPadding: "50",
-      };
+  const CustomNextArrow = (props:any) => {
+    const { className, style, onClick } = props;
+    return (
+      <ArrowRight
+        id="proyectBefore"
+        color="white"
+        size={18}
+        className={className}
+        style={{ ...style, display: "block" }}
+        onClick={onClick}
+      />
+    );
+  };
+  
+  const CustomPrevArrow = (props:any) => {
+    const { className, style, onClick } = props;
+    return (
+      <ArrowLeft
+        id="proyectNext"
+        color="white"
+        size={18}
+        className={className}
+        style={{ ...style, display: "block" }}
+        onClick={onClick}
+      />
+    );
+  };
+
+
+  const settings = {
+    autoplay: true,
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    nextArrow: <CustomNextArrow />,
+    prevArrow: <CustomPrevArrow />,
+    responsive: [
+      {
+        breakpoint: 810,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+
+        }
+      },
+    ]
+  };
+
   return (
     <section
       id="proyect"
-      className="overflow-hidden min-h-[653px] flex flex-col justify-center items-center gap-y-10 bg py-20"
+      className=" min-h-[653px] max-w-[900px] mx-auto w-full gap-y-10 py-20 overflow-hidden"
     >
-      <div className="max-w-[900px] flex flex-col gap-y-10">
+      <div className="flex flex-col gap-y-10">
         <div className="text-center px-10" data-aos="fade-up">
           <p className="text-[32px] font-black text-blue-600">
             Nuestros Proyectos
@@ -31,20 +88,16 @@ const Proyeccts = () => {
         </div>
 
         <div
-          className="w-full  md:h-80"
+          className="w-full mx-auto px-8"
           data-aos="fade-up"
           data-aos-once="true"
         >
-          <Slider
-            {...settings}
-            className="w-[210px] md:w-[300px] mx-auto text-center  md:h-80 bg-white rounded-3xl shadow-blue-300 shadow-2xl transition-all duration-300"
-          >
-            {proyectos.map((slide, index) => {
-              return (
-                <div key={index} className=" md:h-80    p-10 ">
+          <Slider {...settings}>
+            {proyectos.map((slide, index) => (
+                <div  key={index}  className="bg-white rounded-lg p-10 md:max-w-[300px] shadow-md mb-3 min-h-[288px]">
                   <a
                     href={slide.link}
-                    target="blank"
+                    target="_blank"
                     className="flex flex-col items-center"
                   >
                     <img
@@ -54,14 +107,23 @@ const Proyeccts = () => {
                       width={512}
                       height={512}
                     />
-                    <h1 className={`${slide.tittle === 'Ecar-Autosales' ? 'text-blue-500':'text-blue-600'} font-black`}>{slide.tittle}</h1>
-                    <p className="">{slide.content}</p>
                   </a>
+                  <div className="text-center">
+                    <h1 className={`${slide.tittle === 'Ecar-Autosales' ? 'text-blue-500' : 'text-blue-600'} font-black`}>{slide.tittle}</h1>
+                    <p>{slide.content}</p>
+                  </div>
                 </div>
-              );
-            })}
+            ))}
           </Slider>
         </div>
+
+
+        <Link to="/todos-proyectos">
+          <div className="text-center">
+          <button className=" text-black hover:font-semibold py-2 px-4 rounded-3xl  border-2  transition-all duration-300 hover:bg-blue-600 hover:text-white hover:border-blue-600">Ver todos los proyectos</button>
+          </div>
+        </Link>
+
       </div>
     </section>
   );
