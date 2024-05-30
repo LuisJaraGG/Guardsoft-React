@@ -32,7 +32,7 @@ export const servicios:{
 }[] = [
     {
         lottie:"servicio1",
-        tittle:"Consultoría DIgital",
+        tittle:"Consultoría Digital",
         content:"Realizamos una evaluación y replanteamos los procesos actuales, para crear nuevas oportunidades de crecimiento enfocados en transformación digital.",
         animation:"fade-right"
     },
