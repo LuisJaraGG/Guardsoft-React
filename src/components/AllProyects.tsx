@@ -39,6 +39,15 @@ export const AllProyects=() => {
                             <h1 className="text-xl md:text-3xl text-blue-600 font-bold text-justify">{p.tittle}</h1>
                             <p className="text-justify text-sm text-blue-600">{p.shotDescription}</p>
                             <p>{p.description}</p>
+                            <div className="flex gap-2 mt-3">
+                                {p.images.map((i) => {
+                                    return(
+                                        <img key={crypto.randomUUID()} src={i} alt={p.tittle} 
+                                        className="object-contain  w-8 h-8"/>
+                                    )
+                                })}
+
+                            </div>
                             <Link to={p.link} target="_blank">
                                 <div className="mt-5">
                                 <button className=" text-black hover:font-semibold py-2 px-4 rounded-3xl  border-2  transition-all duration-300 hover:bg-blue-600 hover:text-white hover:border-blue-600 flex gap-2">Ver Proyecto <EyeIcon size={18} className="my-auto"/></button>
@@ -58,6 +67,16 @@ export const AllProyects=() => {
                         <h1 className="text-xl text-right md:text-3xl text-blue-600 font-bold">{p.tittle}</h1>
                         <p className="text-right text-sm text-blue-600">{p.shotDescription}</p>
                         <p>{p.description}</p>
+                        
+                        <div className="flex gap-2 mt-3 justify-end">
+                                {p.images.map((i) => {
+                                    return(
+                                        <img key={crypto.randomUUID()} src={i} alt={p.tittle} 
+                                        className="object-contain  w-8 h-8"/>
+                                    )
+                                })}
+
+                            </div>
                         <Link to={p.link} target="_blank">
                                 <div className="mt-5">
                                 <button className=" text-black hover:font-semibold py-2 px-4 rounded-3xl  border-2  transition-all duration-300 hover:bg-blue-600 hover:text-white hover:border-blue-600 flex gap-2">Ver Proyecto <EyeIcon size={18} className="my-auto"/></button>

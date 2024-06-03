@@ -78,7 +78,7 @@
     background: radial-gradient(circle closest-side, rgba(191, 219, 254, 0.3), transparent);
 }
 .bg {
-    background: radial-gradient(circle closest-side, rgba(146, 147, 148, 0.3), transparent);
+    background: radial-gradient(circle closest-side, rgba(198, 226, 255, 0.3), transparent);
 }
 @media (min-height: 700px) {
     .text-change {

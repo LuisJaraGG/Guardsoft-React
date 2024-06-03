@@ -12,6 +12,7 @@ const About = () => {
         <p
           className=" text-[20px] lg:text-[25px]  font-normal text-blue-600"
           data-aos="fade-up"
+          data-aos-once="true"
         >
           Sobre nosotros
         </p>

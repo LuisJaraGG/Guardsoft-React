@@ -73,7 +73,7 @@ const Proyeccts = () => {
   return (
     <section
       id="proyect"
-      className=" min-h-[653px] max-w-[900px] mx-auto w-full gap-y-10 py-20 overflow-hidden"
+      className=" min-h-[653px] max-w-[900px] mx-auto w-full gap-y-10 py-20 overflow-hidden bg"
     >
       <div className="flex flex-col gap-y-10">
         <div className="text-center px-10" data-aos="fade-up">

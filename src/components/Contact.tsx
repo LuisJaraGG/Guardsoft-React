@@ -71,7 +71,7 @@ const Contact = () => {
     <>
       <div
         id="contact"
-        className=" flex  items-center  relative min-h-[805px]  overflow-hidden h-screen"
+        className=" flex  items-center  relative min-h-[805px]  overflow-hidden h-screen "
       >
         {/* hasta 1088 px es mono */}
 
