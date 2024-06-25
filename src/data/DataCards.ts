@@ -99,14 +99,23 @@ export const proyectos:{
   {
     url: "/images/ecar-icon.png",
     tittle: "Ecar-Autosales",
-    content:
-      "Compra y venta de automoviles de forma sencilla en cualquier momento.",
+    content: "Compra y venta de automoviles de forma sencilla en cualquier momento.",
     link: "https://autosales.ecar.pe",
     description: "Ecar Autosales es una aplicación especializada en la compra y venta de autos. Recopila y expone gran cantidad de autos de distintas marcas para que que nuestros usuarios puedan analizarlos y comprarlos, asegurando siempre la legitimidad en cada proceso realizado .",
     image:"/images/autosales-screen.png",
     shotDescription:"Sistema de venta de autos",
     images:["/images/angular.svg","/images/aws.svg","/images/mysql.svg","/images/firebase.svg","/images/c.svg"]
   },
+  {
+    url: "/images/vilcatoma.png",
+    tittle: "Vilcatoma",
+    content: "Pagina web sobre un Estudio juridico; Vilcatoma, priorizando la informacion de calidad.",
+    link: "https://www.estudiovilcatomayasociados.com/",
+    image:"/images/vilcatoma-screen.png",
+    description: "Landing Page sobre un Estudio Juridico; Vilcatoma, priorizando el UX/UI de los usuarios para una mejor experiencia de usuario, plasmando las ideas de nuestros clientes de la manera como ellos quieren que se vean, armonizandolos con la informacion de la empresa.", 
+    shotDescription:"Landing Page",
+    images:["/images/html.svg","/images/css.svg","/images/ts.svg","/images/react.svg","/images/tailwind.svg","/images/node.svg"]
+  }
 ]
 
 export const locacion:{
