@@ -1,6 +1,5 @@
 import Spiner from "./spiner";
 import { useState } from "react";
-import Footer from "./Footer";
 
 const Developing = () => {
   const [Loading, setLoading] = useState(true)
@@ -137,7 +136,6 @@ const Developing = () => {
         </div>
       </div>
     </section>
-    <Footer/>
     
     </>
   );
