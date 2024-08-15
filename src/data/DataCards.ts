@@ -115,6 +115,16 @@ export const proyectos:{
     description: "Landing Page sobre un Estudio Juridico; Vilcatoma, priorizando el UX/UI de los usuarios para una mejor experiencia de usuario, plasmando las ideas de nuestros clientes de la manera como ellos quieren que se vean, armonizandolos con la informacion de la empresa.", 
     shotDescription:"Landing Page",
     images:["/images/html.svg","/images/css.svg","/images/ts.svg","/images/react.svg","/images/tailwind.svg","/images/node.svg"]
+  },
+  {
+    url: "/images/elite.webp",
+    tittle: "Elite Ascenso",
+    content: "Aplicación movil de cuestionarios para postulantes a la pnp.",
+    link: "https://play.google.com/store/apps/details?id=com.guardsoft.elias",
+    image:"/images/elias.png",
+    description: "Nuestra aplicación móvil está diseñada para postulantes a la Policía Nacional del Perú (PNP). Con Elite Ascenso, tendrás acceso a una amplia variedad de cuestionarios diseñados para ayudarte a dominar los conocimientos necesarios para el examen de admisión. Cada cuestionario está elaborado cuidadosamente para cubrir las áreas clave y asegurar que estés listo para enfrentar cualquier desafío.", 
+    shotDescription:"Aplicacion mobil",
+    images:["/images/firebase.svg","/images/android-studio.svg","/images/flutter.png","/images/java.svg"]
   }
 ]
 
