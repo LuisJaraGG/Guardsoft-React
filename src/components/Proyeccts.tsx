@@ -88,17 +88,16 @@ const Proyeccts = () => {
         </div>
 
         <div
-          className="w-full mx-auto px-8"
+          className="w-full mx-auto px-8 "
           data-aos="fade-up"
           data-aos-once="true"
         >
           <Slider {...settings}>
             {proyectos.map((slide, index) => (
-                <div  key={index}  className="bg-white rounded-lg p-10 md:max-w-[300px] shadow-md mb-3 min-h-[288px]">
-                  <a
-                    href={slide.link}
-                    target="_blank"
-                    className="flex flex-col items-center"
+                <a  key={index}                     href={slide.link}
+                target="_blank" className=" bg-white rounded-lg p-10 md:max-w-[300px] shadow-md my-3 min-h-[288px] hover:scale-105  transition-all duration-200">
+                  <div
+                    className="flex flex-col items-center cursor-pointer"
                   >
                     <img
                       src={slide.url}
@@ -107,12 +106,12 @@ const Proyeccts = () => {
                       width={512}
                       height={512}
                     />
-                  </a>
+                  </div>
                   <div className="text-center">
                     <h1 className={`${slide.tittle === 'Ecar-Autosales' ? 'text-blue-500' : 'text-blue-600'} font-black`}>{slide.tittle}</h1>
                     <p>{slide.content}</p>
                   </div>
-                </div>
+                </a>
             ))}
           </Slider>
         </div>

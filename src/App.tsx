@@ -12,7 +12,9 @@ import { AllProyects } from "./components/AllProyects";
 
 function App() {
     useEffect(() => {
-      AOS.init();
+      AOS.init({
+        once: true,
+      });
     }, []);
   const router = createBrowserRouter([
     {

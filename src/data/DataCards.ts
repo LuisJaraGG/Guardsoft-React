@@ -125,6 +125,16 @@ export const proyectos:{
     description: "Nuestra aplicación móvil está diseñada para postulantes a la Policía Nacional del Perú (PNP). Con Elite Ascenso, tendrás acceso a una amplia variedad de cuestionarios diseñados para ayudarte a dominar los conocimientos necesarios para el examen de admisión. Cada cuestionario está elaborado cuidadosamente para cubrir las áreas clave y asegurar que estés listo para enfrentar cualquier desafío.", 
     shotDescription:"Aplicacion mobil",
     images:["/images/firebase.svg","/images/android-studio.svg","/images/flutter.png","/images/java.svg"]
+  },
+  {
+    url: "/images/cimag.svg",
+    tittle: "Cimag.pe",
+    content: "Pagina web dedica en la promoción y la administración de Cimag.",
+    image:"/images/screen-cimag.jpg",
+    images:["/images/ts.svg","/images/nextjs.svg","/images/tailwind.svg","/images/node.svg"],
+    link: "https://www.cimag.pe/",
+    description: "Pagina web dedica en la promoción y la administración de productos de citrato de sodio y más. Con Cimag.pe, podras adquirir un producto de interes y comunicarte con los propietarios para una entrga rápida.",
+    shotDescription :"Pagina web"
   }
 ]
 

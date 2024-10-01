@@ -29,7 +29,7 @@ export const AllProyects=() => {
                     >
                         <a href={p.link} target="_blank" className="px-8">
                             <img src={p.image} alt={p.tittle} 
-                            className="object-contain h-full"
+                            className="object-contain h-full rounded-xl hover:scale-105 transition-all duration-300"
                             onLoad={()=>setLoading(false)} >
 
                             </img>
@@ -43,7 +43,7 @@ export const AllProyects=() => {
                                 {p.images.map((i) => {
                                     return(
                                         <img key={crypto.randomUUID()} src={i} alt={p.tittle} 
-                                        className="object-contain  w-8 h-8"/>
+                                        className="object-contain  w-8 h-8 rounded-xl hover:scale-105 transition-all duration-300"/>
                                     )
                                 })}
 
@@ -72,7 +72,7 @@ export const AllProyects=() => {
                                 {p.images.map((i) => {
                                     return(
                                         <img key={crypto.randomUUID()} src={i} alt={p.tittle} 
-                                        className="object-contain  w-8 h-8"/>
+                                        className="object-contain  w-8 h-8 rounded-xl hover:scale-105 transition-all duration-300"/>
                                     )
                                 })}
 
@@ -85,7 +85,7 @@ export const AllProyects=() => {
                         </div>
                         <a href={p.link} target="_blank" className="px-8">
                             <img src={p.image} alt={p.tittle} 
-                            className="object-contain h-full"
+                            className="object-contain h-full rounded-xl hover:scale-105 transition-all duration-300"
                             onLoad={()=>setLoading(false)}/>
                         </a>
                     </div>
